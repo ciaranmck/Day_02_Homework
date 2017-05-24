@@ -40,3 +40,8 @@ def number_to_full_month_name(month)
     return "September"
   end
 end
+
+def number_to_short_month_name(number)
+  long_month_name = number_to_full_month_name(number)
+  return long_month_name[0..2]
+end
