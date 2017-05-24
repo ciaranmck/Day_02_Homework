@@ -44,3 +44,12 @@ def number_to_short_month_name(number)
   long_month_name = number_to_full_month_name(number)
   return long_month_name[0..2]
 end
+
+def volume_of_cube(side)
+  return side ** 3
+end
+
+def volume_of_sphere(radius)
+  volume = (4/3.0)*Math::PI*(radius**3)
+  return volume.round(1)
+end
